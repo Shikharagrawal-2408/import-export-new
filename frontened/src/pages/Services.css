@@ -1,0 +1,132 @@
+.services-page {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    padding-bottom: 5rem;
+}
+
+.services-hero {
+    text-align: center;
+    padding: 8rem 2rem 4rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 2.5rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.service-card {
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border-color);
+    border-radius: 24px;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(249, 115, 22, 0.4);
+    background: rgba(45, 45, 45, 0.05);
+}
+
+.service-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.service-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.service-desc {
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.service-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2.5rem 0;
+    flex: 1;
+}
+
+.service-features li {
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--text-color);
+}
+
+.service-features li span {
+    color: #22c55e;
+    font-weight: 800;
+}
+
+.service-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.service-price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.service-btn {
+    padding: 0.75rem 1.5rem;
+    background: rgba(249, 115, 22, 0.05);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.service-btn:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+.services-trust {
+    text-align: center;
+    padding: 6rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.trust-quote {
+    font-size: 2rem;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+.services-cta {
+    text-align: center;
+    padding: 6rem 2rem;
+    background: var(--card-bg);
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 30px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
+}
